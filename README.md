@@ -1,8 +1,9 @@
 # Load-Avro-from-Kafka-to-MongoDB
 
 Prerequisites are  
--docker  
--git  
+- docker  
+- git  
+- JDK 8
 
 **Start Confluent on Docker**
 1. Clone the Confluent Image Git Repository
