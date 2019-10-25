@@ -23,9 +23,6 @@ $ sudo docker-compose up -d --build
 sudo docker-compose ps
 ```
 
-4. 
-
-
 
 **MongoDB Installation**
 ```
@@ -34,3 +31,21 @@ $ sudo apt install mongodb
 $ sudo systemctl start
 ```
 To enter the mongodb environment type `mongo` in terminal.
+
+**MongoDB-Sink-Connector** (https://github.com/RADAR-base/MongoDb-Sink-Connector)
+For downloading the Sink Connector you need JDK of verison 8.
+```
+$ git clone https://github.com/RADAR-base/MongoDb-Sink-Connector.git
+$ cd MongoDb-Sink-Connector
+$ ./gradlew clean build
+```
+Make sure zookeeper, kafka-server, schema registry and kafka-rest are running.
+
+Move jar file from 
+
+
+
+
+
+
+
