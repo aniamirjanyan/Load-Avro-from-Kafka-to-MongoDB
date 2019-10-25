@@ -56,6 +56,6 @@ connect-standalone /etc/schema-registry/connect-avro-standalone.properties ./sin
 **Generate Avro Data**
 
 You can find the Java files above.   
-Before running the Java codes make sure docker containers are running.   
-
+Before running the Java codes make sure docker containers are running.     
+Firstly run the Consumer file, and then the Producer file without stopping it.
 
