@@ -46,6 +46,7 @@ Move jar file from
 
 
 **Generate Avro Data**
+
 You can find the Java files above.   
 Before running the Java codes make sure docker containers are running.   
 
