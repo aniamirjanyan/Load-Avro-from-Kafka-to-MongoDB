@@ -5,7 +5,7 @@ Prerequisites are
 - git  
 - JDK 8
 
-**Start Confluent on Docker**
+**Start Confluent on Docker** (https://docs.confluent.io/current/quickstart/ce-docker-quickstart.html)  
 1. Clone the Confluent Image Git Repository
 ```
 $ git clone https://github.com/confluentinc/examples
@@ -44,6 +44,10 @@ Make sure zookeeper, kafka-server, schema registry and kafka-rest are running.
 
 Move jar file from 
 
+
+**Generate Avro Data**
+You can find the Java files above.   
+Before running the Java codes make sure docker containers are running.   
 
 
 
