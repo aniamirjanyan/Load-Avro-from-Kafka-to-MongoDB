@@ -22,3 +22,15 @@ $ sudo docker-compose up -d --build
 ```
 sudo docker-compose ps
 ```
+
+4. 
+
+
+
+**MongoDB Installation**
+```
+$ sudo apt-get update
+$ sudo apt install mongodb
+$ sudo systemctl start
+```
+To enter the mongodb environment type `mongo` in terminal.
