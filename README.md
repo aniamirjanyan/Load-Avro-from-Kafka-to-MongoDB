@@ -47,6 +47,7 @@ Add jar files from `build/libs/` and `build/third-party/` directories to Connect
 `sink.properties` are modified according to the link above.
 
 Run the MongoDB-Sink-Connector in `standalone` mode
+
 `connect-standalone /etc/schema-registry/connect-avro-standalone.properties ./sink.properties`
 
 **Generate Avro Data**
