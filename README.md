@@ -33,7 +33,7 @@ $ sudo systemctl start
 ```
 To enter the mongodb environment type `mongo` in terminal.
 
-**MongoDB-Sink-Connector** (https://github.com/RADAR-base/MongoDb-Sink-Connector)
+**MongoDB-Sink-Connector** (https://github.com/RADAR-base/MongoDb-Sink-Connector)  
 For downloading the Sink Connector you need JDK of verison 8.
 ```
 $ git clone https://github.com/RADAR-base/MongoDb-Sink-Connector.git
