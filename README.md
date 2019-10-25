@@ -42,16 +42,16 @@ $ ./gradlew clean build
 ```
 Make sure zookeeper, kafka-server, schema registry and kafka-rest are running.
 
-Move jar file from 
+Add jar files from `build/libs/` and `build/third-party/` directories to Connect plugin path.
 
+`sink.properties` are modified according to the link above.
+
+Run the MongoDB-Sink-Connector in `standalone` mode
+`connect-standalone /etc/schema-registry/connect-avro-standalone.properties ./sink.properties`
 
 **Generate Avro Data**
 
 You can find the Java files above.   
 Before running the Java codes make sure docker containers are running.   
-
-
-
-
 
 
