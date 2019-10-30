@@ -29,7 +29,7 @@ sudo docker-compose ps
 ```
 $ sudo apt-get update
 $ sudo apt install mongodb
-$ sudo systemctl start
+$ sudo systemctl start mongodb
 ```
 To enter the mongodb environment type `mongo` in terminal.
 
@@ -80,4 +80,10 @@ $ <path-to-confluent>/bin/connect-distributed <path-to-confluent>/etc/schema-reg
 $ <path-to-confluent>/bin/kafka-rest-start <path-to-confluent>/etc/kafka-rest/kafka-rest.properties
 // ksq
 $ <path-to-confluent>/bin/ksql-server-start <path-to-confluent>/etc/ksql/ksql-server.properties
-```
+```  
+5. Generate Avro Data
+You can find the Java files above.   
+Before running the Java codes make sure docker containers are running.     
+Firstly run the Consumer file, and then the Producer file without stopping it.  
+6. Run the following command to start the connector
+
