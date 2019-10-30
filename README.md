@@ -61,10 +61,23 @@ Firstly run the Consumer file, and then the Producer file without stopping it.
 
 --------------------------------------------------------------------------
 
-**Second Option **
+**Second Option**
 
 1. Install Confluent (https://docs.confluent.io/current/installation/installing_cp/zip-tar.html)  
 2. After installation you need to change some configurations in the following locations. 
 `/etc/kafka/server.properties`, `/etc/confluent-control-center/control-center-production.properties`, `/etc/kafka/connect-distributed.properties`, `/etc/schema-registry/schema-registry.properties`.    
 3. The configurations are shown in the link.  
-4. 
+4. Start Confluent Platform using these commands (remember to use your own paths)  
+```
+$ <path-to-confluent>/bin/zookeeper-server-start <path-to-confluent>/etc/kafka/zookeeper.properties
+$ <path-to-confluent>/bin/kafka-server-start <path-to-confluent>/etc/kafka/server.properties
+$ <path-to-confluent>/bin/schema-registry-start <path-to-confluent>/etc/schema-registry/schema-registry.properties
+// control center
+$ <path-to-confluent>/bin/control-center-start <path-to-confluent>/etc/confluent-control-center/control-center.properties
+// kafka connect
+$ <path-to-confluent>/bin/connect-distributed <path-to-confluent>/etc/schema-registry/connect-avro-distributed.properties
+// rest proxy
+$ <path-to-confluent>/bin/kafka-rest-start <path-to-confluent>/etc/kafka-rest/kafka-rest.properties
+// ksq
+$ <path-to-confluent>/bin/ksql-server-start <path-to-confluent>/etc/ksql/ksql-server.properties
+```
